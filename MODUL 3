@@ -1,1 +1,60 @@
 
+# LAPORAN MODUL 3
+
+---
+
+## 1. Sistem Input dan Perhitungan Nilai Akhir Mahasiswa
+### Codingan
+
+<img width="1588" height="1888" alt="code" src="https://github.com/user-attachments/assets/a2d1f569-4785-4770-951c-0eca5b62798f" />
+
+### Terminal (Output)
+
+<img width="371" height="503" alt="Screenshot 2025-10-16 214430" src="https://github.com/user-attachments/assets/ee5608b1-05b0-4796-b8be-e3ad1ee3eb08" />
+
+### Penjelasan
+Program ini digunakan untuk menginput data mahasiswa dan menghitung nilai akhir berdasarkan bobot UTS, UAS, dan tugas. Hasil perhitungan kemudian ditampilkan dalam bentuk daftar nilai mahasiswa yang terstruktur.
+
+---
+
+## 2. Manajemen Data Pelajaran dengan Struct dan Fungsi
+
+### Codingan
+## 2.1. pelajaran.cpp
+<img width="661" height="290" alt="Screenshot 2025-10-16 204748" src="https://github.com/user-attachments/assets/d55cc046-5bfe-4c37-9c34-71bbbb19414d" />
+## 2.2. pelajaran.h
+<img width="750" height="257" alt="Screenshot 2025-10-16 204726" src="https://github.com/user-attachments/assets/1d113be5-ef99-41e1-a763-574ebd268874" />
+## 2.3. main.cpp
+<img width="462" height="311" alt="Screenshot 2025-10-16 204759" src="https://github.com/user-attachments/assets/0703d870-10ee-4634-be88-d1229427d4a9" />
+
+
+
+### Terminal (Output)
+
+<img width="365" height="112" alt="Screenshot 2025-10-16 205013" src="https://github.com/user-attachments/assets/04d48fcc-fe1c-45cc-ac82-4715252ef490" />
+
+### Penjelasan
+Program ini mendefinisikan struktur data untuk pelajaran dan menyediakan fungsi untuk membuat serta menampilkan datanya. Program utama memungkinkan pengguna memasukkan data pelajaran dan menampilkannya dengan format yang terorganisir.
+
+---
+
+## 3. Demonstrasi Penukaran Nilai pada Array 2D dan Variabel Menggunakan Pointer
+
+### Codingan
+
+<img width="1388" height="2040" alt="code" src="https://github.com/user-attachments/assets/97d248f2-a011-4fab-8a91-05f1f55a59a6" />
+
+### Keluaran (Output)
+
+<img width="312" height="399" alt="Screenshot 2025-10-16 222633" src="https://github.com/user-attachments/assets/912c3ea8-14e2-49f5-b1bd-7a33b2cbf91c" />
+
+### Penjelasan
+Program ini menukar elemen tertentu antara dua array 2D dan menukar nilai dua variabel menggunakan pointer. Hasil sebelum dan setelah penukaran ditampilkan untuk menunjukkan perubahan datanya secara visual.
+
+---
+
+## Referensi:
+1. Modul 1 – *Code::Blocks IDE & Pengenalan Bahasa C++ (Bagian Pertama)*. [PDF Modul]  
+2. Modul 2 – *Pengenalan Bahasa C++ (Bagian Kedua)*. [PDF Modul]
+3. Modul 3 Struktur Data IF - Telkom University (2025)
+4. W3Schools. *C++
