@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul Pengenalan Bahasa C++ (4)</h1>
-<p align="center">Arvinanto Bahtiar</p>
+<p align="center">Arif Fadlil Hasibuan</p>
 
 ## Dasar Teori
 
@@ -19,6 +19,12 @@ int main() {
 }
 ```
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+
+## Soal
+<img width="324" height="394" alt="image" src="https://github.com/user-attachments/assets/cb95a550-6aca-4b49-a96a-f05b842ec76d" />
+<img width="509" height="412" alt="image" src="https://github.com/user-attachments/assets/46f5bf2b-3eba-45c5-89ab-ee08234fdb0b" />
+
+
 
 ## Unguided 
 
