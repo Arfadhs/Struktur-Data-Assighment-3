@@ -1,11 +1,9 @@
 #include "Singlylist.h"
 
-/* ********* pengecekan dan pembuatan list ********* */
 void createList(List& L) {
     L.first = Nil;
 }
 
-/* ********* manajemen memori ********* */
 address alokasi(infotype x) {
     address P = new ElmList;
     P->info = x;
@@ -18,7 +16,6 @@ void dealokasi(address& P) {
     P = Nil;
 }
 
-/* ********* penambahan elemen ********* */
 void insertFirst(List& L, address P) {
     if (P != Nil) {
         P->next = L.first;
@@ -26,7 +23,6 @@ void insertFirst(List& L, address P) {
     }
 }
 
-/* ********** proses semua elemen list ********* */
 void printInfo(const List& L) {
     address P = L.first;
     bool firstOut = true;
@@ -49,7 +45,6 @@ int nbList(const List& L) {
     return n;
 }
 
-/* ********** penghapusan elemen ********* */
 void deleteFirst(List& L, address& P) {
     P = Nil;
     if (L.first != Nil) {
@@ -72,7 +67,6 @@ void deleteLast(List& L, address& P) {
     }
     P = Q;
     if (Prec == Nil) {
-        // hanya satu elemen
         L.first = Nil;
     }
     else {
@@ -90,7 +84,6 @@ void deleteAfter(List& L, address Prec, address& P) {
     }
 }
 
-/* ********** penghapusan seluruh list ********* */
 void deleteList(List& L) {
     address P;
     while (L.first != Nil) {
