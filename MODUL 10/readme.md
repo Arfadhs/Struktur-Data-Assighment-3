@@ -1,4 +1,3 @@
-<img width="1310" height="1432" alt="main cpp Foto" src="https://github.com/user-attachments/assets/61a15984-9984-4272-b137-a9edae8b0a58" />
 # <h1 align="center">Laporan Praktikum Modul 10: tree</h1>
 <p align="center"><b>Nama:</b> Arif Fadlil Hasibuan</p>
 
