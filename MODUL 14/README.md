@@ -1,4 +1,4 @@
-# Tugas Praktikum Multi Linked List
+# Tugas Praktikum Graph
 ## 👤 Identitas Pembuat
 - **Nama** : ARIF FADLIL HASIBUAN
 - **Kelas** : IF-12-04
