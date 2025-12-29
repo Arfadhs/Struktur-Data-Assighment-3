@@ -1,5 +1,5 @@
 
-# <h1 align="center">Laporan Praktikum Modul 13: Multi Linked List </h1>
+# <h1 align="center">Laporan Praktikum Modul 14: Graph </h1>
 <p align="center"><b>Nama:</b> Arif Fadlil Hasibuan</p>
 
 ---
@@ -7,63 +7,61 @@
 # 1. Unguided
 
 ## 2.1 Soal
-![Modul 12_multilinkedlist_page-0001](https://github.com/user-attachments/assets/b66b090c-b63a-47f8-8d4d-c7c1d68af9a4)
-
-
+<img width="547" height="559" alt="image" src="https://github.com/user-attachments/assets/4d949160-dc44-4b5e-9fc9-a198f09eaeff" />
 
 ---
 
 # 2.2 Screenshot Coding dan Deskripsi
 
 # Nomor 1
-## circularlist.h
-<img width="1464" height="1698" alt="hcode" src="https://github.com/user-attachments/assets/50736ec8-6f2c-4c73-80d4-7d190c81480e" />
+## Graph.h
+<img width="940" height="1736" alt="hcode" src="https://github.com/user-attachments/assets/018f3381-160c-4672-864f-24a3e6f63dcc" />
 
 **Deskripsi:**  
-Bagian ini cuma berisi definisi "bentuk" datanya (struct) dan daftar nama fungsi yang bakal dipakai (prototipe).
+File ini berfungsi sebagai kerangka dasar yang mendefinisikan struktur data Graph (menggunakan struct ElmNode dan ElmEdge) serta mendeklarasikan daftar fungsi yang akan digunakan.
 
 ---
 
-## circularlist.cpp
-<img width="2602" height="4890" alt="code" src="https://github.com/user-attachments/assets/cb737cb2-b48c-44c5-bb1f-8128f566c5dd" />
+## Graph.cpp
+<img width="1016" height="4776" alt="code" src="https://github.com/user-attachments/assets/ff0b4efe-5372-44a7-aa14-0de553c5ff75" />
 
 
 **Deskripsi:**  
-File ini berisi aturan main lengkapnya, kayak gimana caranya nambah data di awal/akhir, menghapus data, dan memastikan list-nya "muter" (circular) kembali ke awal.
+File ini berisi "otak" program yang memuat logika detail untuk menambahkan node, menyambungkan garis (edge), serta melakukan penelusuran graph menggunakan algoritma DFS (Stack) dan BFS (Queue).
 
 ---
 
 ## main.cpp
-<img width="1140" height="1736" alt="maincode" src="https://github.com/user-attachments/assets/144f96f3-3fac-424a-a008-7a7a22106ca3" />
+<img width="1202" height="2344" alt="maincode" src="https://github.com/user-attachments/assets/60cb5e90-87ab-46e2-927b-3dd4a92b3b6f" />
 
 **Deskripsi:**  
-Ini tempat eksekusinya, di mana program membuat list baru, lalu memasukkan data mahasiswa (seperti Danu, Fahmi, Bobi, dll.) dengan berbagai posisi urutan, dan terakhir menampilkannya ke layar.
+Ini adalah tempat eksekusi program di mana Graph "Z" dibuat dengan node A sampai H, dihubungkan satu sama lain, lalu hasilnya ditampilkan dalam bentuk Adjacency List serta urutan traversal DFS dan BFS.
 
 ---
 
 
 # 2. Output (Nomor 1)
-<img width="240" height="650" alt="image" src="https://github.com/user-attachments/assets/038424aa-0a66-4a5a-a55b-17735fe23cf6" />
+<img width="354" height="229" alt="image" src="https://github.com/user-attachments/assets/2e104ba6-5ef1-4fe1-9496-efd9c3ef6832" />
 
 ---
 
 
 # 3. Kesimpulan
-Program ini mendemonstrasikan penerapan struktur data Circular Single Linked List C++ untuk mengelola data mahasiswa, di mana data baru dimasukkan secara bertahap ke posisi awal, akhir, dan disisipkan di tengah setelah data "patokan"-nya ditemukan.
+Secara keseluruhan, program ini adalah implementasi lengkap struktur data Graph menggunakan representasi Adjacency List yang mampu membangun koneksi antar data dan mendemonstrasikan dua metode penelusuran data yang berbeda (DFS dan BFS).
 
 ---
 
 ## Poin-Poin Penting
-- truktur Melingkar: Program menggunakan konsep Circular, artinya elemen terakhir (ekor) menunjuk kembali ke elemen pertama (kepala), jadi tidak ada ujung yang putus (NULL).
+- Representasi Data: Graph dibangun menggunakan konsep Adjacency List, di mana setiap Node (titik) memiliki pointer firstEdge yang menunjuk ke daftar tetangganya.
 
-- Demonstrasi Lengkap: Kode ini menguji semua fungsi dasar input sekaligus: insertFirst (depan), insertLast (belakang), dan insertAfter (tengah/nyelip).
+- Dua Metode Traversal: Program ini menerapkan DFS (Depth First Search) yang menggunakan bantuan Stack untuk menelusuri kedalaman, dan BFS (Breadth First Search) yang menggunakan Queue untuk menelusuri secara melebar.
 
-- Pencarian Valid: Fitur insertAfter bekerja dengan sempurna karena program terlebih dahulu mencari NIM yang sudah ada (menggunakan findElm) sebagai patokan sebelum menyisipkan data baru.
+- Status Visited: Terdapat variabel visited di dalam node untuk menandai apakah node tersebut sudah dikunjungi atau belum, guna mencegah looping abadi saat penelusuran.
 
-- Data Mahasiswa: Setiap elemen menyimpan informasi lengkap berupa Nama, NIM, Jenis Kelamin, dan IPK
+- Reset Data: Di program utama (main), status visited di-reset kembali menjadi 0 setelah DFS selesai agar algoritma BFS berikutnya bisa berjalan dengan benar dari awal.
 ---
 
 # 5. Referensi
 
-- Modul Praktikum 13: Multi Linked List  
+- Modul Praktikum 14: Graph  
 - W3Schools C++ Tutorial  
